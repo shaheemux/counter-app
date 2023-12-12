@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue Counter App</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>
+</head>
+<body style="min-height: 100svh; border: solid; display: grid; margin: 0; place-items: center; background-image: linear-gradient(darkgrey,white);">
+
+
+
+    <style>
+        #app{
+            border: solid;
+            box-shadow: 8px 8px 8px;
+            background-image: linear-gradient(hotpink,orange);
+            padding: 1rem;
+            display: grid;
+            width: 200px;
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline;
+            text-shadow: 10px 10px 10px;
+        }
+        button{
+            width: 85px;
+            margin: auto;
+            border-radius: 5px;
+            background: transparent;
+            box-shadow: rgb(140, 124, 124)3px 4px;
+            cursor: pointer;
+            padding: 2px
+        }
+    </style>
+    
+
+
+  <div id="app">
+    <h1>Counter: {{ count }}</h1>
+    <button @click="minus">minus</button>
+    <button @click="add">add</button>
+  </div>
+
+
+   <script src="/app.js"></script>
+</body>
+</html>
